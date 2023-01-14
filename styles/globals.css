@@ -3,7 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+  }
+
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1280px] w-[calc(100%-3rem)] ml-[1.5rem] mr-[1.5rem] lg:m-auto;
+  }
+
+  .play-sound {
+    @apply opacity-[.8];
+  }
+
+  .stop-sound {
+    @apply opacity-[1] bg-[rgba(255,255,255,.05)];
+  }
+
+  .player-control {
+    @apply border-[2px] flex justify-center items-center w-[50px] h-[50px] rounded-[50%] hover:bg-[rgba(255,255,255,.05)];
   }
 }
