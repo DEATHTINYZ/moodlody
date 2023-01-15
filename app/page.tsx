@@ -1,5 +1,5 @@
 import Footer from '@/components/footer/Footer'
-import SoundPlayer from '@/components/sound/SoundPlayer'
+import SoundList from '@/components/sound/SoundList'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <SoundPlayer />
+          <SoundList />
         </div>
       </div>
       <Footer />
