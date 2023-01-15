@@ -28,7 +28,7 @@ export default function Head() {
       <link rel="manifest" href="/manifest.json" />
 
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:url" content="https://yourdomain.com" />
+      <meta name="twitter:url" content="https://moodlody.vercel.app/" />
       <meta name="twitter:title" content="Moodlody" />
       <meta
         name="twitter:description"
@@ -37,7 +37,7 @@ export default function Head() {
       />
       <meta
         name="twitter:image"
-        content="https://yourdomain.com/icons/android-chrome-192x192.png"
+        content="https://moodlody.vercel.app/icons/android-chrome-192x192.png"
       />
       <meta name="twitter:creator" content="@Dream.Chayutpong" />
       <meta property="og:type" content="website" />
@@ -48,10 +48,10 @@ export default function Head() {
             relax and relieve stress.”"
       />
       <meta property="og:site_name" content="Moodlody" />
-      <meta property="og:url" content="https://yourdomain.com" />
+      <meta property="og:url" content="https://moodlody.vercel.app/" />
       <meta
         property="og:image"
-        content="https://yourdomain.com/icons/apple-touch-icon.png"
+        content="https://moodlody.vercel.app/icons/apple-touch-icon.png"
       />
     </>
   )
