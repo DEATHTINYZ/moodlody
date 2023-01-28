@@ -2,7 +2,7 @@
 'use client'
 import { SoundListType } from '@/types/types'
 import Tooltip from '@mui/material/Tooltip'
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import {
   BsFillStopFill,
   BsFillVolumeMuteFill,
@@ -13,7 +13,7 @@ import Sound from './Sound'
 
 const SoundList = ({ sounds }: SoundListType) => {
   const MAX_SOUNDS = 5
-  const [currentSoundIndex, setCurrentSoundIndex] = useState([0])
+  const [currentSoundIndex, setCurrentSoundIndex] = useState<number[]>([])
   const [isMuted, setIsMuted] = useState(false)
   const [playingSounds, setPlayingSounds] = useState<{
     [index: number]: boolean
@@ -23,14 +23,25 @@ const SoundList = ({ sounds }: SoundListType) => {
     if (currentSoundIndex.length < MAX_SOUNDS) {
       const randomIndex = Math.floor(Math.random() * sounds.length)
       setCurrentSoundIndex([...currentSoundIndex, randomIndex])
-      setPlayingSounds({ [randomIndex]: true })
     } else {
-      let newCurrentSoundIndexe = [...currentSoundIndex]
-      newCurrentSoundIndexe.shift()
-      newCurrentSoundIndexe.push(Math.floor(Math.random() * sounds.length))
-      setCurrentSoundIndex(newCurrentSoundIndexe)
+      let newCurrentSoundIndex = [...currentSoundIndex]
+      newCurrentSoundIndex.shift()
+      newCurrentSoundIndex.push(Math.floor(Math.random() * sounds.length))
+      setCurrentSoundIndex(newCurrentSoundIndex)
     }
   }
+
+  useEffect(() => {
+    setPlayingSounds(
+      currentSoundIndex.reduce(
+        (newPlayingSounds: { [key: number]: boolean }, index) => {
+          newPlayingSounds[index] = true
+          return newPlayingSounds
+        },
+        {}
+      )
+    )
+  }, [currentSoundIndex])
 
   const handleMuteUnmute = () => {
     setIsMuted(!isMuted)
