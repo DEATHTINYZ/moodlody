@@ -68,7 +68,7 @@ git clone https://github.com/DEATHTINYZ/moodlody.git
 2. Navigate to the project directory:
 
 ```bash
-cd rick-and-morty-characters
+cd moodlody
 ```
 
 3. Install the dependencies:
