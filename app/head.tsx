@@ -44,7 +44,7 @@ export default function Head() {
         property="og:description"
         content="Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress."
       />
-      <meta property="og:image" content="https://moodlody.vercel.app/public/assets/example-1.png" />
+      <meta property="og:image" content="/assets/example-1.png" />
 
       {/* <!-- Twitter Meta Tags --> */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -55,7 +55,7 @@ export default function Head() {
         name="twitter:description"
         content="Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress."
       />
-      <meta name="twitter:image" content="https://moodlody.vercel.app/public/assets/example-1.png" />
+      <meta name="twitter:image" content="/assets/example-1.png" />
     </>
   )
 }
