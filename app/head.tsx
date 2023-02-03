@@ -5,8 +5,16 @@ export default function Head() {
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
         name="description"
-        content="“Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress.”"
+        content="Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress."
       />
+      <meta
+        name="keywords"
+        content="moodlody, nature sounds, focus, sleep, relaxation, stress relief, app, soundscape, 
+        mindfulness, wellness, soothing, calming, concentration, meditation, peaceful, tranquility,
+        rejuvenation, harmony"
+      />
+
+      {/* <!-- Favicon --> */}
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -28,19 +36,15 @@ export default function Head() {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
-      <link rel="manifest" href="/manifest.json" />
 
       {/* <!-- Facebook Meta Tags --> */}
       <meta property="og:url" content="https://moodlody.vercel.app/" />
       <meta property="og:title" content="Moodlody" />
       <meta
         property="og:description"
-        content="“Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress.”"
+        content="Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress."
       />
-      <meta
-        property="og:image"
-        content="https://moodlody.vercel.app/icons/apple-touch-icon.png"
-      />
+      <meta property="og:image" content="/public/assets/example-1.png" />
 
       {/* <!-- Twitter Meta Tags --> */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -49,12 +53,9 @@ export default function Head() {
       <meta name="twitter:title" content="Moodlody" />
       <meta
         name="twitter:description"
-        content="“Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress.”"
+        content="Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress."
       />
-      <meta
-        name="twitter:image"
-        content="https://moodlody.vercel.app/icons/android-chrome-192x192.png"
-      />
+      <meta name="twitter:image" content="/public/assets/example-1.png" />
     </>
   )
 }
