@@ -15,7 +15,7 @@
     ],
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
-    "start_url": "https://moodlody.vercel.app/",
+    "start_url": "/",
     "display": "standalone",
     "orientation": "portrait"
 }
