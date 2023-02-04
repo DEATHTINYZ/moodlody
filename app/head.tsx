@@ -13,9 +13,9 @@ export default function Head() {
         mindfulness, wellness, soothing, calming, concentration, meditation, peaceful, tranquility,
         rejuvenation, harmony"
       />
-      <link rel="manifest" href="/manifest.json" />
 
       {/* <!-- Favicon --> */}
+      <link rel="manifest" href="/manifest.json" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"

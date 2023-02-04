@@ -1,13 +1,6 @@
 {
     "name": "Moodlody",
     "short_name": "MLD",
-    "description": "Moodlody is an app with nature sounds to help you focus, sleep, relax and relieve stress.",
-    "theme_color": "#FFFFFF",
-    "background_color": "#FFFFFF",
-    "start_url": "/",
-    "scope": "/",
-    "display": "standalone",
-    "orientation": "portrait",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -24,5 +17,10 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ]
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
 }
