@@ -53,7 +53,7 @@
 
 ### Main Page
 
-![Example screenshot](/public/assets/example-1.png)
+![Example screenshot](/public/assets/image.png)
 
 ## Getting started
 
